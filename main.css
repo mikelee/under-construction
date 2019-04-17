@@ -1,0 +1,130 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    font-weight: 400;
+    font-family: Montserrat;
+    background-image: url(https://images.unsplash.com/photo-1528150230181-99bbf7b22162?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+    background-position: 63% 50%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: white;
+    position: static;
+}
+
+h1 {
+        margin: 0 0 0 1rem;
+        font-size: 3rem;
+        font-weight: 400;
+        padding-top: 1rem;
+        border-bottom: 2px solid rgba(135, 185, 185, .85);
+        display: inline-block;
+    }
+
+h2 {
+    font-size: 1.7rem;
+}
+
+
+.display {
+    height: 100%;
+}
+
+.display-overlay {
+    background-color: rgba(150, 200, 200, .85);
+    -webkit-clip-path: polygon(0 0, 50% 0, 70% 100%, 0 100%);
+    clip-path: polygon(0 0, 50% 0, 70% 100%, 0 100%);
+    width: 100vw;
+    height: 100vh;
+    animation: moveInLeft .8s ease-out;
+    position: absolute;
+    left: -2rem;
+    top: 0;
+}
+
+.content {
+    padding-left: 2rem;
+}
+
+.coming {
+    margin: 45% 0 0 5%;
+}
+
+.catch {
+    margin: 10% 0 0 10%;
+}
+
+
+/* Device Sizing */
+@media screen and (min-width: 400px) {
+    .coming {
+        font-size: 2rem;
+        margin: 40% 0 0 5%;
+    }
+
+    .catch {
+        font-size: 2rem;
+        margin: 10% 0 0 13%;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .display-overlay {
+        background-color: rgba(150, 200, 200, .85);
+        -webkit-clip-path: polygon(0 0, 40% 0, 60% 100%, 0 100%);
+        clip-path: polygon(0 0, 40% 0, 60% 100%, 0 100%);
+        height: 100%;
+    }
+
+    .coming {
+        margin: 25% 0 0 8%;
+        font-size: 2.5rem;
+    }
+
+    .catch {
+        margin: 10% 0 0 15%;
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .coming {
+        margin: 20% 0 0 12%;
+        font-size: 3rem;
+    }
+
+    .catch {
+        margin: 10% 0 0 20%;
+        font-size: 3rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .coming {
+        margin: 15% 0 0 13%;
+        font-size: 4rem;
+    }
+
+    .catch {
+        margin: 10% 0 0 22%;
+        font-size: 4rem;
+    }
+}
+
+
+/* Animations */
+@keyframes moveInLeft {
+    0% {
+        transform: translateX(-80rem);
+    }
+
+    80% {
+        transform: translateX(2rem);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
