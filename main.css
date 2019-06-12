@@ -12,6 +12,7 @@ body {
     height: 100vh;
     color: white;
     position: static;
+    background-size: cover;
 }
 
 h1 {
@@ -102,14 +103,41 @@ h2 {
 }
 
 @media screen and (min-width: 1200px) {
+    h1 {
+        font-size: 5rem;
+    }
+
     .coming {
-        margin: 15% 0 0 13%;
+        margin: 15% 0 0 12%;
         font-size: 4rem;
     }
 
     .catch {
-        margin: 10% 0 0 22%;
         font-size: 4rem;
+    }
+}
+
+@media screen and (min-width: 1700px) {
+    .coming {
+        margin: 15% 0 0 8%;
+        font-size: 5.5rem;
+    }
+
+    .catch {
+        margin: 10% 0 0 15%;
+        font-size: 5.5rem;
+    }
+}
+
+@media screen and (min-width: 2100px) {
+    .coming {
+        margin: 15% 0 0 10%;
+        font-size: 7rem;
+    }
+
+    .catch {
+        margin: 10% 0 0 20%;
+        font-size: 7rem;
     }
 }
 
